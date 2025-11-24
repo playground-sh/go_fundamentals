@@ -6,10 +6,11 @@ import (
 )
 
 const (
-	BooleanDataTypes  = "BOOLEAN_DATA_TYPES"
-	ConstantDataTypes = "CONSTANT_DATA_TYPES"
-	NumericDataTypes  = "NUMERIC_DATA_TYPES"
-	StringDataTypes   = "STRING_DATA_TYPES"
+	BooleanDataTypes   = "BOOLEAN_DATA_TYPES"
+	ConstantDataTypes  = "CONSTANT_DATA_TYPES"
+	NumericDataTypes   = "NUMERIC_DATA_TYPES"
+	StringDataTypes    = "STRING_DATA_TYPES"
+	ArrayAndSliceTypes = "ARRAY_AND_SLICE_TYPES"
 )
 
 func RunLesson(lesson string) {
@@ -38,6 +39,9 @@ func RunLesson(lesson string) {
 		// Constants
 		data_types.Constants()
 		fmt.Println()
+	case ArrayAndSliceTypes:
+		// Arrays and Slices
+		data_types.ArraysAndSlices()
 	}
 
 }
