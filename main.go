@@ -18,7 +18,10 @@ func main() {
 	data_types.DefaultIntegers()
 	fmt.Println()
 
-	// Boolean Types
+	// Boolean Type
 	data_types.BooleanData()
 	fmt.Println()
+
+	// String Type
+	data_types.StringData()
 }
