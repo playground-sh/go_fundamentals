@@ -11,6 +11,7 @@ const (
 	NumericDataTypes   = "NUMERIC_DATA_TYPES"
 	StringDataTypes    = "STRING_DATA_TYPES"
 	ArrayAndSliceTypes = "ARRAY_AND_SLICE_TYPES"
+	Pointers           = "POINTERS"
 )
 
 func RunLesson(lesson string) {
@@ -42,6 +43,8 @@ func RunLesson(lesson string) {
 	case ArrayAndSliceTypes:
 		// Arrays and Slices
 		data_types.ArraysAndSlices()
+	case Pointers:
+		data_types.Pointers()
 	}
 
 }
