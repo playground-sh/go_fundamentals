@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	// Numeric Types
 	data_types.SignedIntegers()
 	fmt.Println()
 	data_types.UnsignedIntegers()
@@ -15,4 +16,9 @@ func main() {
 	data_types.ComplexNumbers()
 	fmt.Println()
 	data_types.DefaultIntegers()
+	fmt.Println()
+
+	// Boolean Types
+	data_types.BooleanData()
+	fmt.Println()
 }
