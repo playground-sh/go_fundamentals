@@ -12,6 +12,7 @@ const (
 	StringDataTypes    = "STRING_DATA_TYPES"
 	ArrayAndSliceTypes = "ARRAY_AND_SLICE_TYPES"
 	Pointers           = "POINTERS"
+	Operators          = "OPERATORS"
 )
 
 func RunLesson(lesson string) {
@@ -45,6 +46,8 @@ func RunLesson(lesson string) {
 		data_types.ArraysAndSlices()
 	case Pointers:
 		data_types.Pointers()
+	case Operators:
+		data_types.OperatorsAndComparisons()
 	}
 
 }
