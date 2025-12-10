@@ -13,6 +13,7 @@ const (
 	ArrayAndSliceTypes = "ARRAY_AND_SLICE_TYPES"
 	Pointers           = "POINTERS"
 	Operators          = "OPERATORS"
+	Sets               = "SETS"
 )
 
 func RunLesson(lesson string) {
@@ -48,6 +49,8 @@ func RunLesson(lesson string) {
 		data_types.Pointers()
 	case Operators:
 		data_types.OperatorsAndComparisons()
+	case Sets:
+		data_types.SetsDemo()
 	}
 
 }
