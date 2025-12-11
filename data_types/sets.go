@@ -5,6 +5,8 @@ import (
 	"strings"
 )
 
+// Source - https://www.bytesizego.com/blog/set-in-golang
+
 // Set is a collection of unique elements
 type Set[T comparable] struct {
 	elements map[T]struct{}
