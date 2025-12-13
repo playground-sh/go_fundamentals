@@ -15,6 +15,7 @@ const (
 	Pointers           = "POINTERS"
 	Operators          = "OPERATORS"
 	Sets               = "SETS"
+	Maps               = "MAPS"
 )
 
 func RunLesson(lesson string) {
@@ -59,5 +60,7 @@ func RunLesson(lesson string) {
 	case Sets:
 		DataTypes.SetsDemo()
 		fmt.Println()
+	case Maps:
+		DataTypes.MapsDemo()
 	}
 }
