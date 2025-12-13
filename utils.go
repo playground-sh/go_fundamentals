@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go_fundamentals/data_types"
+	DataTypes "go_fundamentals/data_types"
 )
 
 const (
@@ -21,39 +21,43 @@ func RunLesson(lesson string) {
 	switch lesson {
 	case NumericDataTypes:
 		// Numeric Types
-		data_types.SignedIntegers()
+		DataTypes.SignedIntegers()
 		fmt.Println()
-		data_types.UnsignedIntegers()
+		DataTypes.UnsignedIntegers()
 		fmt.Println()
-		data_types.FloatingPoints()
+		DataTypes.FloatingPoints()
 		fmt.Println()
-		data_types.ComplexNumbers()
+		DataTypes.ComplexNumbers()
 		fmt.Println()
-		data_types.DefaultIntegers()
+		DataTypes.DefaultIntegers()
 		fmt.Println()
 	case BooleanDataTypes:
 		// Boolean Type
-		data_types.BooleanData()
+		DataTypes.BooleanData()
 		fmt.Println()
 	case StringDataTypes:
 		// String Type
-		data_types.StringData()
+		DataTypes.StringData()
 		fmt.Println()
 	case ConstantDataTypes:
 		// Constants
-		data_types.Constants()
+		DataTypes.Constants()
 		fmt.Println()
 	case GoIota:
-		data_types.Iota()
+		DataTypes.Iota()
+		fmt.Println()
 	case ArrayAndSliceTypes:
 		// Arrays and Slices
-		data_types.ArraysAndSlices()
+		DataTypes.ArraysAndSlices()
+		fmt.Println()
 	case Pointers:
-		data_types.Pointers()
+		DataTypes.Pointers()
+		fmt.Println()
 	case Operators:
-		data_types.OperatorsAndComparisons()
+		DataTypes.OperatorsAndComparisons()
+		fmt.Println()
 	case Sets:
-		data_types.SetsDemo()
+		DataTypes.SetsDemo()
+		fmt.Println()
 	}
-
 }
