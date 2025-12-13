@@ -16,6 +16,7 @@ const (
 	Operators          = "OPERATORS"
 	Sets               = "SETS"
 	Maps               = "MAPS"
+	Structs            = "Structs"
 )
 
 func RunLesson(lesson string) {
@@ -62,5 +63,7 @@ func RunLesson(lesson string) {
 		fmt.Println()
 	case Maps:
 		DataTypes.MapsDemo()
+	case Structs:
+		DataTypes.Structs()
 	}
 }
