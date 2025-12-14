@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	Conditionals "go_fundamentals/control_flow"
 	DataTypes "go_fundamentals/data_types"
 )
 
@@ -17,6 +18,7 @@ const (
 	Sets               = "SETS"
 	Maps               = "MAPS"
 	Structs            = "Structs"
+	IfElse             = "IF_ELSE"
 )
 
 func RunLesson(lesson string) {
@@ -65,5 +67,7 @@ func RunLesson(lesson string) {
 		DataTypes.MapsDemo()
 	case Structs:
 		DataTypes.Structs()
+	case IfElse:
+		Conditionals.IfElse()
 	}
 }
