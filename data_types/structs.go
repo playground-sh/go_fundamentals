@@ -22,4 +22,9 @@ func Structs() {
 		gpa:        3.81,
 	}
 	fmt.Println(alex)
+
+	// access members individually
+	fmt.Println(alex.name)
+	fmt.Println(alex.department)
+	fmt.Println(alex.gpa)
 }
