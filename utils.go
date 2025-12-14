@@ -19,6 +19,7 @@ const (
 	Maps               = "MAPS"
 	Structs            = "Structs"
 	IfElse             = "IF_ELSE"
+	Switch             = "SWITCH"
 )
 
 func RunLesson(lesson string) {
@@ -69,5 +70,7 @@ func RunLesson(lesson string) {
 		DataTypes.Structs()
 	case IfElse:
 		Conditionals.IfElse()
+	case Switch:
+		Conditionals.SwitchStatements()
 	}
 }
