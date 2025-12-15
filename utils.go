@@ -20,6 +20,7 @@ const (
 	Structs            = "Structs"
 	IfElse             = "IF_ELSE"
 	Switch             = "SWITCH"
+	Loops              = "LOOPS"
 )
 
 func RunLesson(lesson string) {
@@ -72,5 +73,20 @@ func RunLesson(lesson string) {
 		Conditionals.IfElse()
 	case Switch:
 		Conditionals.SwitchStatements()
+	case Loops:
+		Conditionals.InfiniteLoop()
+		fmt.Println()
+
+		Conditionals.LoopUntil()
+		fmt.Println()
+
+		Conditionals.CounterBasedLoop()
+		fmt.Println()
+
+		Conditionals.RangeBasedLoop()
+		fmt.Println()
+
+		Conditionals.LoopingOverCollections()
+		fmt.Println()
 	}
 }
