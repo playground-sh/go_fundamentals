@@ -76,16 +76,12 @@ func RunLesson(lesson string) {
 	case Loops:
 		Conditionals.InfiniteLoop()
 		fmt.Println()
-
 		Conditionals.LoopUntil()
 		fmt.Println()
-
 		Conditionals.CounterBasedLoop()
 		fmt.Println()
-
 		Conditionals.RangeBasedLoop()
 		fmt.Println()
-
 		Conditionals.LoopingOverCollections()
 		fmt.Println()
 	}
