@@ -39,7 +39,7 @@ func SignedIntegers() {
 func UnsignedIntegers() {
 	var unsignedInt8 uint8
 	unsignedInt8 = math.MaxUint8
-	fmt.Println("math.MaxInt8:", unsignedInt8)
+	fmt.Println("math.MaxUint8:", unsignedInt8)
 
 	var bytes byte
 	bytes = math.MaxUint8
