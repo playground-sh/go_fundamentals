@@ -21,6 +21,7 @@ const (
 	IfElse             = "IF_ELSE"
 	Switch             = "SWITCH"
 	Loops              = "LOOPS"
+	DeferredStatement  = "DEFERRED_STATEMENT"
 )
 
 func RunLesson(lesson string) {
@@ -83,6 +84,11 @@ func RunLesson(lesson string) {
 		Conditionals.RangeBasedLoop()
 		fmt.Println()
 		Conditionals.LoopingOverCollections()
+		fmt.Println()
+	case DeferredStatement:
+		Conditionals.DeferredFileIO()
+		fmt.Println()
+		Conditionals.StackingDeferredCalls()
 		fmt.Println()
 	}
 }
