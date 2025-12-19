@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	Conditionals "go_fundamentals/control_flow"
+	ControlFlow "go_fundamentals/control_flow"
 	DataTypes "go_fundamentals/data_types"
 )
 
@@ -22,6 +22,8 @@ const (
 	Switch             = "SWITCH"
 	Loops              = "LOOPS"
 	DeferredStatement  = "DEFERRED_STATEMENT"
+	Panic              = "PANIC"
+	PanicAndRecover    = "PANIC_AND_RECOVER"
 )
 
 func RunLesson(lesson string) {
@@ -71,24 +73,30 @@ func RunLesson(lesson string) {
 	case Structs:
 		DataTypes.Structs()
 	case IfElse:
-		Conditionals.IfElse()
+		ControlFlow.IfElse()
 	case Switch:
-		Conditionals.SwitchStatements()
+		ControlFlow.SwitchStatements()
 	case Loops:
-		Conditionals.InfiniteLoop()
+		ControlFlow.InfiniteLoop()
 		fmt.Println()
-		Conditionals.LoopUntil()
+		ControlFlow.LoopUntil()
 		fmt.Println()
-		Conditionals.CounterBasedLoop()
+		ControlFlow.CounterBasedLoop()
 		fmt.Println()
-		Conditionals.RangeBasedLoop()
+		ControlFlow.RangeBasedLoop()
 		fmt.Println()
-		Conditionals.LoopingOverCollections()
+		ControlFlow.LoopingOverCollections()
 		fmt.Println()
 	case DeferredStatement:
-		Conditionals.DeferredFileIO()
+		ControlFlow.DeferredFileIO()
 		fmt.Println()
-		Conditionals.StackingDeferredCalls()
+		ControlFlow.StackingDeferredCalls()
+		fmt.Println()
+	case Panic:
+		ControlFlow.Panic()
+		fmt.Println()
+	case PanicAndRecover:
+		ControlFlow.PanicAndRecover()
 		fmt.Println()
 	}
 }
