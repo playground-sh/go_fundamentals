@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	ControlFlow "go_fundamentals/control_flow"
-	DataTypes "go_fundamentals/data_types"
+	BasicDataTypes "go_fundamentals/data_types/basic"
+	CompositeDataTypes "go_fundamentals/data_types/composite"
 )
 
 const (
@@ -30,48 +31,48 @@ func RunLesson(lesson string) {
 	switch lesson {
 	case NumericDataTypes:
 		// Numeric Types
-		DataTypes.SignedIntegers()
+		BasicDataTypes.SignedIntegers()
 		fmt.Println()
-		DataTypes.UnsignedIntegers()
+		BasicDataTypes.UnsignedIntegers()
 		fmt.Println()
-		DataTypes.FloatingPoints()
+		BasicDataTypes.FloatingPoints()
 		fmt.Println()
-		DataTypes.ComplexNumbers()
+		BasicDataTypes.ComplexNumbers()
 		fmt.Println()
-		DataTypes.DefaultIntegers()
+		BasicDataTypes.DefaultIntegers()
 		fmt.Println()
 	case BooleanDataTypes:
 		// Boolean Type
-		DataTypes.BooleanData()
+		BasicDataTypes.BooleanData()
 		fmt.Println()
 	case StringDataTypes:
 		// String Type
-		DataTypes.StringData()
+		BasicDataTypes.StringData()
 		fmt.Println()
 	case ConstantDataTypes:
 		// Constants
-		DataTypes.Constants()
+		BasicDataTypes.Constants()
 		fmt.Println()
 	case GoIota:
-		DataTypes.Iota()
+		BasicDataTypes.Iota()
 		fmt.Println()
 	case ArrayAndSliceTypes:
 		// Arrays and Slices
-		DataTypes.ArraysAndSlices()
+		CompositeDataTypes.ArraysAndSlices()
 		fmt.Println()
 	case Pointers:
-		DataTypes.Pointers()
+		CompositeDataTypes.Pointers()
 		fmt.Println()
 	case Operators:
-		DataTypes.OperatorsAndComparisons()
+		BasicDataTypes.OperatorsAndComparisons()
 		fmt.Println()
 	case Sets:
-		DataTypes.SetsDemo()
+		CompositeDataTypes.SetsDemo()
 		fmt.Println()
 	case Maps:
-		DataTypes.MapsDemo()
+		CompositeDataTypes.MapsDemo()
 	case Structs:
-		DataTypes.Structs()
+		CompositeDataTypes.Structs()
 	case IfElse:
 		ControlFlow.IfElse()
 	case Switch:
