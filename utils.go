@@ -5,6 +5,7 @@ import (
 	ControlFlow "go_fundamentals/control_flow"
 	BasicDataTypes "go_fundamentals/data_types/basic"
 	CompositeDataTypes "go_fundamentals/data_types/composite"
+	CodeOrganization "go_fundamentals/code_organization"
 )
 
 const (
@@ -25,6 +26,7 @@ const (
 	DeferredStatement  = "DEFERRED_STATEMENT"
 	Panic              = "PANIC"
 	PanicAndRecover    = "PANIC_AND_RECOVER"
+	Functions          = "FUNCTIONS"
 )
 
 func RunLesson(lesson string) {
@@ -98,6 +100,17 @@ func RunLesson(lesson string) {
 		fmt.Println()
 	case PanicAndRecover:
 		ControlFlow.PanicAndRecover()
+		fmt.Println()
+	case Functions:
+		CodeOrganization.AddDemo()
+		fmt.Println()
+		CodeOrganization.SwapDemo()
+		fmt.Println()
+		CodeOrganization.SplitDemo()
+		fmt.Println()
+		CodeOrganization.SumDemo()
+		fmt.Println()
+		CodeOrganization.AnonymousFunction()
 		fmt.Println()
 	}
 }
