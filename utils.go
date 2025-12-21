@@ -27,6 +27,7 @@ const (
 	Panic              = "PANIC"
 	PanicAndRecover    = "PANIC_AND_RECOVER"
 	Functions          = "FUNCTIONS"
+	AnonymousFunctions = "ANONYMOUS_FUNCTIONS"
 )
 
 func RunLesson(lesson string) {
@@ -110,13 +111,14 @@ func RunLesson(lesson string) {
 		fmt.Println()
 		CodeOrganization.SumDemo()
 		fmt.Println()
+	case AnonymousFunctions:
 		CodeOrganization.AnonymousFunction()
 		fmt.Println()
-		CodeOrganization.AssigningAnnonymousFunctions()
+		CodeOrganization.AssigningAnonymousFunctions()
 		fmt.Println()
-		CodeOrganization.AnnonymousFunctionWithGoRoutine()
+		CodeOrganization.AnonymousFunctionWithGoRoutine()
 		fmt.Println()
-		CodeOrganization.AnnonymousFunctionAsClosure()
+		CodeOrganization.AnonymousFunctionAsClosure()
 		fmt.Println()
 	}
 }
