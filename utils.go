@@ -112,5 +112,11 @@ func RunLesson(lesson string) {
 		fmt.Println()
 		CodeOrganization.AnonymousFunction()
 		fmt.Println()
+		CodeOrganization.AssigningAnnonymousFunctions()
+		fmt.Println()
+		CodeOrganization.AnnonymousFunctionWithGoRoutine()
+		fmt.Println()
+		CodeOrganization.AnnonymousFunctionAsClosure()
+		fmt.Println()
 	}
 }
