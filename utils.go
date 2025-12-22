@@ -2,32 +2,33 @@ package main
 
 import (
 	"fmt"
+	CodeOrganization "go_fundamentals/code_organization"
 	ControlFlow "go_fundamentals/control_flow"
 	BasicDataTypes "go_fundamentals/data_types/basic"
 	CompositeDataTypes "go_fundamentals/data_types/composite"
-	CodeOrganization "go_fundamentals/code_organization"
 )
 
 const (
-	BooleanDataTypes   = "BOOLEAN_DATA_TYPES"
-	ConstantDataTypes  = "CONSTANT_DATA_TYPES"
-	GoIota             = "GO_IOTA"
-	NumericDataTypes   = "NUMERIC_DATA_TYPES"
-	StringDataTypes    = "STRING_DATA_TYPES"
-	ArrayAndSliceTypes = "ARRAY_AND_SLICE_TYPES"
-	Pointers           = "POINTERS"
-	Operators          = "OPERATORS"
-	Sets               = "SETS"
-	Maps               = "MAPS"
-	Structs            = "Structs"
-	IfElse             = "IF_ELSE"
-	Switch             = "SWITCH"
-	Loops              = "LOOPS"
-	DeferredStatement  = "DEFERRED_STATEMENT"
-	Panic              = "PANIC"
-	PanicAndRecover    = "PANIC_AND_RECOVER"
-	Functions          = "FUNCTIONS"
-	AnonymousFunctions = "ANONYMOUS_FUNCTIONS"
+	BooleanDataTypes         = "BOOLEAN_DATA_TYPES"
+	ConstantDataTypes        = "CONSTANT_DATA_TYPES"
+	GoIota                   = "GO_IOTA"
+	NumericDataTypes         = "NUMERIC_DATA_TYPES"
+	StringDataTypes          = "STRING_DATA_TYPES"
+	ArrayAndSliceTypes       = "ARRAY_AND_SLICE_TYPES"
+	Pointers                 = "POINTERS"
+	Operators                = "OPERATORS"
+	Sets                     = "SETS"
+	Maps                     = "MAPS"
+	Structs                  = "Structs"
+	IfElse                   = "IF_ELSE"
+	Switch                   = "SWITCH"
+	Loops                    = "LOOPS"
+	DeferredStatement        = "DEFERRED_STATEMENT"
+	Panic                    = "PANIC"
+	PanicAndRecover          = "PANIC_AND_RECOVER"
+	Functions                = "FUNCTIONS"
+	AnonymousFunctions       = "ANONYMOUS_FUNCTIONS"
+	GenericCustomConstraints = "GENERIC_CUSTOM_CONSTRAINTS"
 )
 
 func RunLesson(lesson string) {
@@ -119,6 +120,9 @@ func RunLesson(lesson string) {
 		CodeOrganization.AnonymousFunctionWithGoRoutine()
 		fmt.Println()
 		CodeOrganization.AnonymousFunctionAsClosure()
+		fmt.Println()
+	case GenericCustomConstraints:
+		CodeOrganization.GenericCustomConstraintDemo()
 		fmt.Println()
 	}
 }
