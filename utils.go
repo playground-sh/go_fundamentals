@@ -31,6 +31,7 @@ const (
 	GenericCustomConstraints = "GENERIC_CUSTOM_CONSTRAINTS"
 	GenericFunctions         = "GENERIC_FUNCTIONS"
 	GenericConstraints       = "GENERIC_CONSTRAINTS"
+	Methods                  = "METHODS"
 )
 
 func RunLesson(lesson string) {
@@ -131,6 +132,9 @@ func RunLesson(lesson string) {
 		fmt.Println()
 	case GenericConstraints:
 		CodeOrganization.GenericFunctionWithConstraints()
+		fmt.Println()
+	case Methods:
+		CodeOrganization.MethodsDemo()
 		fmt.Println()
 	}
 }
