@@ -1,5 +1,7 @@
 package main
 
+import "go_fundamentals/exercise/dsa"
+
 func main() {
-	RunLesson(GenericCustomConstraints)
+	dsa.LinkedListDemo()
 }
