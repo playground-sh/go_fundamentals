@@ -29,6 +29,7 @@ const (
 	Functions                = "FUNCTIONS"
 	AnonymousFunctions       = "ANONYMOUS_FUNCTIONS"
 	GenericCustomConstraints = "GENERIC_CUSTOM_CONSTRAINTS"
+	GenericFunctions         = "GENERIC_FUNCTIONS"
 )
 
 func RunLesson(lesson string) {
@@ -123,6 +124,9 @@ func RunLesson(lesson string) {
 		fmt.Println()
 	case GenericCustomConstraints:
 		CodeOrganization.GenericCustomConstraintDemo()
+		fmt.Println()
+	case GenericFunctions:
+		CodeOrganization.GenericFunctionsDemo()
 		fmt.Println()
 	}
 }
