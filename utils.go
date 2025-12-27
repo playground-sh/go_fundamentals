@@ -33,6 +33,7 @@ const (
 	GenericConstraints       = "GENERIC_CONSTRAINTS"
 	Methods                  = "METHODS"
 	Interfaces               = "INTERFACES"
+	Embedding                = "EMBEDDING"
 )
 
 func RunLesson(lesson string) {
@@ -139,6 +140,9 @@ func RunLesson(lesson string) {
 		fmt.Println()
 	case Interfaces:
 		CodeOrganization.InterfaceDemo()
+		fmt.Println()
+	case Embedding:
+		CodeOrganization.EmbeddingDemo()
 		fmt.Println()
 	}
 }
