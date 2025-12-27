@@ -32,6 +32,7 @@ const (
 	GenericFunctions         = "GENERIC_FUNCTIONS"
 	GenericConstraints       = "GENERIC_CONSTRAINTS"
 	Methods                  = "METHODS"
+	Interfaces               = "INTERFACES"
 )
 
 func RunLesson(lesson string) {
@@ -135,6 +136,9 @@ func RunLesson(lesson string) {
 		fmt.Println()
 	case Methods:
 		CodeOrganization.MethodsDemo()
+		fmt.Println()
+	case Interfaces:
+		CodeOrganization.InterfaceDemo()
 		fmt.Println()
 	}
 }
