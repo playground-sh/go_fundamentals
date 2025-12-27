@@ -34,6 +34,7 @@ const (
 	Methods                  = "METHODS"
 	Interfaces               = "INTERFACES"
 	Embedding                = "EMBEDDING"
+	Composition              = "COMPOSITION"
 )
 
 func RunLesson(lesson string) {
@@ -143,6 +144,9 @@ func RunLesson(lesson string) {
 		fmt.Println()
 	case Embedding:
 		CodeOrganization.EmbeddingDemo()
+		fmt.Println()
+	case Composition:
+		CodeOrganization.CompositionDemo()
 		fmt.Println()
 	}
 }
