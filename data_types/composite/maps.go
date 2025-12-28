@@ -49,3 +49,17 @@ func MapsDemo() {
 	fmt.Println(beverages) // affects the other
 	fmt.Println()
 }
+
+func MapsIterationDemo() {
+	fruitsPrices := map[string]float32{
+		"Banana": 120.0,
+		"Orange": 180.0,
+		"Apples": 220.5,
+		"Grapes": 375.25,
+		"Pears":  410.25,
+	}
+
+	for fruit, price := range fruitsPrices {
+		fmt.Println(fruit, "costs", price, "TK")
+	}
+}

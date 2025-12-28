@@ -19,6 +19,7 @@ const (
 	Operators                = "OPERATORS"
 	Sets                     = "SETS"
 	Maps                     = "MAPS"
+	MapIteration             = "MAP_ITERATION"
 	Structs                  = "Structs"
 	IfElse                   = "IF_ELSE"
 	Switch                   = "SWITCH"
@@ -81,6 +82,7 @@ func RunLesson(lesson string) {
 		fmt.Println()
 	case Maps:
 		CompositeDataTypes.MapsDemo()
+		CompositeDataTypes.MapsIterationDemo()
 	case Structs:
 		CompositeDataTypes.Structs()
 	case IfElse:
