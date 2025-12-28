@@ -82,6 +82,7 @@ func RunLesson(lesson string) {
 		fmt.Println()
 	case Maps:
 		CompositeDataTypes.MapsDemo()
+	case MapIteration:
 		CompositeDataTypes.MapsIterationDemo()
 	case Structs:
 		CompositeDataTypes.Structs()

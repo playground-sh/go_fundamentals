@@ -60,6 +60,6 @@ func MapsIterationDemo() {
 	}
 
 	for fruit, price := range fruitsPrices {
-		fmt.Println(fruit, "costs", price, "TK")
+		fmt.Printf("%s costs %.2f TK\n", fruit, price)
 	}
 }
