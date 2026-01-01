@@ -20,6 +20,7 @@ const (
 	Sets                     = "SETS"
 	Maps                     = "MAPS"
 	MapIteration             = "MAP_ITERATION"
+	MapsCommaOk              = "MAPS_COMMA_OK"
 	Structs                  = "Structs"
 	IfElse                   = "IF_ELSE"
 	Switch                   = "SWITCH"
@@ -84,6 +85,8 @@ func RunLesson(lesson string) {
 		CompositeDataTypes.MapsDemo()
 	case MapIteration:
 		CompositeDataTypes.MapsIterationDemo()
+	case MapsCommaOk:
+		CompositeDataTypes.MapsCommaOkIdiom()
 	case Structs:
 		CompositeDataTypes.Structs()
 	case IfElse:

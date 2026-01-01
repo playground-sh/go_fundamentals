@@ -63,3 +63,31 @@ func MapsIterationDemo() {
 		fmt.Printf("%s costs %.2f TK\n", fruit, price)
 	}
 }
+
+func MapsCommaOkIdiom() {
+	salaries := map[string]int{
+		"Alice": 50000,
+		"Bob":   0,
+	}
+
+	// Checks for existence; case: key exists
+	if salary, ok := salaries["Alice"]; ok {
+		// `salary` and `ok` are local to this `if` block
+		fmt.Println("Alice's salay is:", salary)
+	}
+
+	// Checks for existence; case: key exists
+	if salary, ok := salaries["Bob"]; ok {
+		// `salary` and `ok` are local to this `if` block as well
+		fmt.Println("Bob's salay is:", salary)
+	}
+
+	// Checks for existence; case: key doesn't exist
+	if salary, ok := salaries["Charlie"]; ok {
+		// `salary` and `ok` are local to this `if` block as well
+		fmt.Println("Charlie's salay is:", salary)
+	} else {
+		// and are available to the adjacent `else` block as well
+		fmt.Println("Salary for Charlie not found. Instead got:", salary)
+	}
+}
