@@ -22,6 +22,7 @@ const (
 	MapIteration             = "MAP_ITERATION"
 	MapsCommaOk              = "MAPS_COMMA_OK"
 	Structs                  = "Structs"
+	TypeConversions          = "TYPE_CONVERSIONS"
 	IfElse                   = "IF_ELSE"
 	Switch                   = "SWITCH"
 	Loops                    = "LOOPS"
@@ -89,6 +90,19 @@ func RunLesson(lesson string) {
 		CompositeDataTypes.MapsCommaOkIdiom()
 	case Structs:
 		CompositeDataTypes.Structs()
+	case TypeConversions:
+		CompositeDataTypes.NumericTypeConversions()
+		fmt.Println()
+		CompositeDataTypes.StringByteConversion()
+		fmt.Println()
+		CompositeDataTypes.TypeAliasing()
+		fmt.Println()
+		CompositeDataTypes.PointerConversion()
+		fmt.Println()
+		CompositeDataTypes.WhyUnsafe()
+		fmt.Println()
+		CompositeDataTypes.Reinterpret()
+		fmt.Println()
 	case IfElse:
 		ControlFlow.IfElse()
 	case Switch:
