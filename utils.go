@@ -6,6 +6,7 @@ import (
 	ControlFlow "go_fundamentals/control_flow"
 	BasicDataTypes "go_fundamentals/data_types/basic"
 	CompositeDataTypes "go_fundamentals/data_types/composite"
+	Errors "go_fundamentals/error_handling"
 )
 
 const (
@@ -38,6 +39,7 @@ const (
 	Interfaces               = "INTERFACES"
 	Embedding                = "EMBEDDING"
 	Composition              = "COMPOSITION"
+	ErrorsDemo               = "ERRORS_DEMO"
 )
 
 func RunLesson(lesson string) {
@@ -167,6 +169,11 @@ func RunLesson(lesson string) {
 		fmt.Println()
 	case Composition:
 		CodeOrganization.CompositionDemo()
+		fmt.Println()
+	case ErrorsDemo:
+		Errors.CreatingErrors()
+		fmt.Println()
+		Errors.ErrorHandling()
 		fmt.Println()
 	}
 }
