@@ -25,9 +25,11 @@ func ErrorHandling() {
     defer func(file *os.File) {
         err := file.Close()
         if err != nil {
-            fmt.Println("Failed to close file")
+            errorMsg := fmt.Errorf("failed to close file: %w", err)
+            fmt.Println(errorMsg)
         }
     }(file)
 
+    // to avoid the error and run this following line, create a `data.txt` file at project root.
     fmt.Println("File opened successfully!")
 }
