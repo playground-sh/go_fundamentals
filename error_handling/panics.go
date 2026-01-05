@@ -42,3 +42,26 @@ func CreatePanic() {
 		fmt.Printf("Read %d bytes: %s\n", n, string(buffer[:n]))
 	}
 }
+
+func divideWithRecovery(dividend, divisor int) (result int, err error) {
+	defer func() {
+		if msg := recover(); msg != nil {
+			// named returns
+			result = 0
+			err = fmt.Errorf("%v", msg)
+		}
+	}()
+
+	return dividend / divisor, nil
+}
+
+func PanicToError() {
+	dividend, divisor := 10, 0
+	result, err := divideWithRecovery(dividend, divisor)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Printf("%d / %d = %d\n", dividend, divisor, result)
+}

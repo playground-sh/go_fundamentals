@@ -41,6 +41,7 @@ const (
 	Composition              = "COMPOSITION"
 	ErrorsDemo               = "ERRORS_DEMO"
 	PanicsDemo               = "PANICS_DEMO"
+	PanicRecovery            = "PANIC_RECOVERY"
 )
 
 func RunLesson(lesson string) {
@@ -178,6 +179,9 @@ func RunLesson(lesson string) {
 		fmt.Println()
 	case PanicsDemo:
 		Errors.CreatePanic()
+		fmt.Println()
+	case PanicRecovery:
+		Errors.PanicToError()
 		fmt.Println()
 	}
 }
