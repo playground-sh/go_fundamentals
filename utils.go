@@ -40,6 +40,7 @@ const (
 	Embedding                = "EMBEDDING"
 	Composition              = "COMPOSITION"
 	ErrorsDemo               = "ERRORS_DEMO"
+	PanicsDemo               = "PANICS_DEMO"
 )
 
 func RunLesson(lesson string) {
@@ -174,6 +175,9 @@ func RunLesson(lesson string) {
 		Errors.CreatingErrors()
 		fmt.Println()
 		Errors.ErrorHandling()
+		fmt.Println()
+	case PanicsDemo:
+		Errors.CreatePanic()
 		fmt.Println()
 	}
 }
