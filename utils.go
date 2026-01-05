@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	CodeOrganization "go_fundamentals/code_organization"
+	Concurrency "go_fundamentals/concurrency"
 	ControlFlow "go_fundamentals/control_flow"
 	BasicDataTypes "go_fundamentals/data_types/basic"
 	CompositeDataTypes "go_fundamentals/data_types/composite"
@@ -42,6 +43,7 @@ const (
 	ErrorsDemo               = "ERRORS_DEMO"
 	PanicsDemo               = "PANICS_DEMO"
 	PanicRecovery            = "PANIC_RECOVERY"
+	GoRoutinesDemo           = "GOROUTINES_DEMO"
 )
 
 func RunLesson(lesson string) {
@@ -182,6 +184,11 @@ func RunLesson(lesson string) {
 		fmt.Println()
 	case PanicRecovery:
 		Errors.PanicToError()
+		fmt.Println()
+	case GoRoutinesDemo:
+		Concurrency.GoRoutinesSimpleDemo()
+		fmt.Println()
+		Concurrency.GoRoutinesMoreDemo()
 		fmt.Println()
 	}
 }
