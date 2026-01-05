@@ -4,9 +4,9 @@ import "fmt"
 
 func producer(jobs chan<- int) {
 	for i := 1; i <= 10; i++ {
-		jobs <- i
+		jobs <- i // Send value to the channel
 	}
-	close(jobs)
+	close(jobs) // Close the channel when done sending
 }
 
 func LoopingWithChannels() {
