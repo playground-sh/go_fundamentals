@@ -44,6 +44,7 @@ const (
 	PanicsDemo               = "PANICS_DEMO"
 	PanicRecovery            = "PANIC_RECOVERY"
 	GoRoutinesDemo           = "GOROUTINES_DEMO"
+	ChannelsDemo             = "CHANNELS_DEMO"
 )
 
 func RunLesson(lesson string) {
@@ -189,6 +190,9 @@ func RunLesson(lesson string) {
 		Concurrency.GoRoutinesSimpleDemo()
 		fmt.Println()
 		Concurrency.GoRoutinesMoreDemo()
+		fmt.Println()
+	case ChannelsDemo:
+		Concurrency.LoopingWithChannels()
 		fmt.Println()
 	}
 }
