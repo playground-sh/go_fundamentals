@@ -1,10 +1,14 @@
 package concurrency
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func producer(jobs chan<- int) {
 	for i := 1; i <= 10; i++ {
 		jobs <- i // Send value to the channel
+		time.Sleep(time.Second)
 	}
 	close(jobs) // Close the channel when done sending
 }
