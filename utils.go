@@ -194,5 +194,7 @@ func RunLesson(lesson string) {
 	case ChannelsDemo:
 		Concurrency.LoopingWithChannels()
 		fmt.Println()
+		Concurrency.ChannelsWithSelectStatement()
+		fmt.Println()
 	}
 }
